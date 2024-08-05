@@ -24,7 +24,7 @@ spring-boot-crud-example
 
 **Step 1: Add Dependencies**
 Add the following dependencies to your pom.xml file:
-'''java
+```Java
 
 	<dependencies>
 		<dependency>
