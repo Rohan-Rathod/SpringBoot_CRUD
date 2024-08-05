@@ -22,7 +22,7 @@ spring-boot-crud-example
 |       |-- application.properties
 |-- pom.xml
 
-##Step 1: Add Dependencies
+## Step 1: Add Dependencies
 Add the following dependencies to your pom.xml file:
 ```Java
 
@@ -54,7 +54,7 @@ Add the following dependencies to your pom.xml file:
 		</dependency>
 	</dependencies>
 ```
-##Step 2: Create the Spring Boot Application Class
+## Step 2: Create the Spring Boot Application Class
 
 ```Java
 // src/main/java/com/example/SpringBootCrudExampleApplication.java
@@ -72,7 +72,7 @@ public class SpringBootCrudExampleApplication {
 }
 
 ```
-Step 3: Create the Employee Entity
+## Step 3: Create the Employee Entity
 ```Java
 // src/main/java/com/example/entity/Employee.java
 
@@ -99,7 +99,7 @@ public class Employee {
     private String role;
 }
 ```
-##Step 4: Create the Employee Repository
+## Step 4: Create the Employee Repository
 ```Java
 // src/main/java/com/example/repository/EmployeeRepository.java
 
@@ -163,7 +163,7 @@ public class EmployeeService {
 }
 ```
 
-##Step 6: Create the Employee Controller
+## Step 6: Create the Employee Controller
 ```Java
 // src/main/java/com/example/controller/EmployeeController.java
 
@@ -223,7 +223,7 @@ public class EmployeeController {
     }
 }
 ```
-##Step 7: Configure application.properties
+## Step 7: Configure application.properties
 ```Java
 # src/main/resources/application.properties
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
@@ -243,7 +243,7 @@ e) finally you created you db
 
 
 ```
-##Example Postman Requests
+## Example Postman Requests
 Here are the Postman requests for testing the CRUD operations:
 
 1. Create an Employee
@@ -254,7 +254,7 @@ URL: http://localhost:8080/api/employees
 Headers:
 Content-Type: application/json
 Body (raw, JSON):
-```java
+```json
 {
   "name": "John Doe",
   "role": "Developer"
