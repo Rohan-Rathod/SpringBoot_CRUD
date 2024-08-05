@@ -24,6 +24,7 @@ spring-boot-crud-example
 
 **Step 1: Add Dependencies**
 Add the following dependencies to your pom.xml file:
+'''java
 
 	<dependencies>
 		<dependency>
@@ -53,8 +54,9 @@ Add the following dependencies to your pom.xml file:
 		</dependency>
 	</dependencies>
 
-**Step 2: Create the Spring Boot Application Class**
+**Step 2: Create the Spring Boot Application Class
 
+'''java
 // src/main/java/com/example/SpringBootCrudExampleApplication.java
 
 package com.example;
