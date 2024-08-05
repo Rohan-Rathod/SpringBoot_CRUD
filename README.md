@@ -1,7 +1,7 @@
 Spring Boot CRUD Example with Lombok
 This project demonstrates a simple Spring Boot application that performs CRUD operations on an Employee entity using Lombok to reduce boilerplate code.
 
-**Project Structure:**
+##Project Structure:
 
 spring-boot-crud-example
 |-- src
@@ -22,7 +22,7 @@ spring-boot-crud-example
 |       |-- application.properties
 |-- pom.xml
 
-**Step 1: Add Dependencies**
+##Step 1: Add Dependencies
 Add the following dependencies to your pom.xml file:
 ```Java
 
@@ -53,10 +53,10 @@ Add the following dependencies to your pom.xml file:
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+```
+##Step 2: Create the Spring Boot Application Class
 
-**Step 2: Create the Spring Boot Application Class
-
-'''java
+```Java
 // src/main/java/com/example/SpringBootCrudExampleApplication.java
 
 package com.example;
@@ -71,9 +71,9 @@ public class SpringBootCrudExampleApplication {
     }
 }
 
-
+```
 Step 3: Create the Employee Entity
-
+```Java
 // src/main/java/com/example/entity/Employee.java
 
 package com.example.entity;
@@ -98,9 +98,9 @@ public class Employee {
     private String name;
     private String role;
 }
-
-**Step 4: Create the Employee Repository**
-
+```
+##Step 4: Create the Employee Repository
+```Java
 // src/main/java/com/example/repository/EmployeeRepository.java
 
 package com.example.repository;
@@ -111,9 +111,9 @@ import com.example.entity.Employee;
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 }
 
-
+```
 **Step 5: Create the Employee Service**
-
+```Java
 // src/main/java/com/example/service/EmployeeService.java
 
 package com.example.service;
@@ -161,9 +161,10 @@ public class EmployeeService {
         employeeRepository.deleteById(id);
     }
 }
+```
 
-**Step 6: Create the Employee Controller**
-
+##Step 6: Create the Employee Controller
+```Java
 // src/main/java/com/example/controller/EmployeeController.java
 
 package com.example.controller;
@@ -221,8 +222,9 @@ public class EmployeeController {
         return ResponseEntity.noContent().build();
     }
 }
-**Step 7: Configure application.properties**
-
+```
+##Step 7: Configure application.properties
+```Java
 # src/main/resources/application.properties
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
 spring.datasource.username=your_username
@@ -240,47 +242,59 @@ d) show databases;
 e) finally you created you db
 
 
-
-**Example Postman Requests**
+```
+##Example Postman Requests
 Here are the Postman requests for testing the CRUD operations:
 
 1. Create an Employee
 Method: POST
+```bash
 URL: http://localhost:8080/api/employees
+```
 Headers:
 Content-Type: application/json
 Body (raw, JSON):
-
+```java
 {
   "name": "John Doe",
   "role": "Developer"
 }
+```
 
 2. Get All Employees
 Method: GET
+```bash
 URL: http://localhost:8080/api/employees
+```
 Headers: None
-3. Get an Employee by ID
+4. Get an Employee by ID
 Method: GET
+```bash
 URL: http://localhost:8080/api/employees/{id}
+```
 Replace {id} with the actual employee ID.
 Headers: None
-4. Update an Employee
+5. Update an Employee
 Method: PUT
+```bash
 URL: http://localhost:8080/api/employees/{id}
+```
 Replace {id} with the actual employee ID.
 Headers:
 Content-Type: application/json
 Body (raw, JSON):
-
+```json
 {
   "name": "Jane Doe",
   "role": "Senior Developer"
 }
+```
 
 5. Delete an Employee
 Method: DELETE
+```bash
 URL: http://localhost:8080/api/employees/{id}
+```
 Replace {id} with the actual employee ID.
 Headers: None
 These instructions will help you set up and run the Spring Boot CRUD application with Lombok. Follow the steps to create the project, and use Postman to test the endpoints.
