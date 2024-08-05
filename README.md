@@ -1,7 +1,7 @@
 Spring Boot CRUD Example with Lombok
 This project demonstrates a simple Spring Boot application that performs CRUD operations on an Employee entity using Lombok to reduce boilerplate code.
 
-##Project Structure:
+## Project Structure:
 ```lua
 spring-boot-crud-example
 |-- src
