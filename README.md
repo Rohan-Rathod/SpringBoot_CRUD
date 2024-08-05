@@ -2,7 +2,7 @@ Spring Boot CRUD Example with Lombok
 This project demonstrates a simple Spring Boot application that performs CRUD operations on an Employee entity using Lombok to reduce boilerplate code.
 
 ##Project Structure:
-
+```lua
 spring-boot-crud-example
 |-- src
 |   |-- main
@@ -21,7 +21,7 @@ spring-boot-crud-example
 |   |   |-- resources
 |       |-- application.properties
 |-- pom.xml
-
+```
 ## Step 1: Add Dependencies
 Add the following dependencies to your pom.xml file:
 ```php
@@ -256,7 +256,7 @@ Content-Type: application/json
 Body (raw, JSON):
 ```json
 {
-  "name": "John Doe",
+  "name": "rohan rathod",
   "role": "Developer"
 }
 ```
@@ -285,7 +285,7 @@ Content-Type: application/json
 Body (raw, JSON):
 ```json
 {
-  "name": "Jane Doe",
+  "name": "rohan rathod",
   "role": "Senior Developer"
 }
 ```
