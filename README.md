@@ -24,7 +24,7 @@ spring-boot-crud-example
 
 ## Step 1: Add Dependencies
 Add the following dependencies to your pom.xml file:
-```Java
+```php
 
 	<dependencies>
 		<dependency>
@@ -112,7 +112,7 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 }
 
 ```
-**Step 5: Create the Employee Service**
+## Step 5: Create the Employee Service
 ```Java
 // src/main/java/com/example/service/EmployeeService.java
 
